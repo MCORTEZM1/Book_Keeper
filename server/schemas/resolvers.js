@@ -16,10 +16,6 @@ const resolvers = {
             
             // if no context.user exists, we know that the user is not authenticated
             throw new AuthenticationError('Not logged in');
-        },
-        // search user by name, email or _id
-        user: async (parent, args) => {
-            return User.findOne(args);
         }
     },
     Mutation: {
@@ -60,7 +56,7 @@ const resolvers = {
             if (context.user) {
                 const updatedUser = await User.findOneAndUpdate(
                     { _id: context.user._id },
-                    { $pull: { savedBooks: {bookId} }},
+                    { $pull: { savedBooks: { bookId } }},
                     { new: true }
                 );
 
