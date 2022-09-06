@@ -1,9 +1,11 @@
 
 # Book Watch
 
+- Book Watch is a full MERN (MongoDB, Express.js, React.js, Node.js) stack application where users can create an account, search for books using google API requests, and save books to easily remember hot titles!
+
 ## **Description**
 
-- Book Watch is a full MERN stack application where users can create an account, search for books using google API requests, and save books to easily remember hot titles!
+
 - This application was written using JavaScript, HTML, CSS, ES6, React, Node, Express.js, MongoDB, GraphQL, Apollo, and deployed on Heroku
 - The motivation behind Book Watch was the need to easily maintain a list of books users would like to read,  using a simple and intuitive user interface.
 - While building this site, my intention was to increase my understanding of MongoDB, GraphQL, and React to handle a full MERN stack application.
